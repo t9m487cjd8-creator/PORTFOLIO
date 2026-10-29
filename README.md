@@ -1,6 +1,6 @@
 # Surya’s Portfolio
 
-A minimal, Apple-inspired personal portfolio built with plain HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
+
 
 I’m a Computer Science student who learns by building. This site shows my side quests, and two of them run live right in the page.
 
