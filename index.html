@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surya | Computer Science student</title>
+<meta name="description" content="Computer Science student building fun, practical projects. Always coding, constantly learning.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="bar-inner">
+    <a class="logo" href="#top">Surya</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <div class="hero-inner" id="heroInner">
+      <p class="role">Computer Science student</p>
+      <h1>Surya.</h1>
+      <p class="rotator"><span id="rotator">Always coding.</span></p>
+      <div class="cta">
+        <a class="pill" href="#projects">See my projects</a>
+        <a class="pill ghost" href="https://github.com/t9m487cjd8-creator" target="_blank" rel="noopener">GitHub &rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="projects">
+    <div class="container">
+      <h2 class="big reveal">Side quests.<br><span class="dim">Try them right here.</span></h2>
+
+      <div class="grid">
+
+        <article class="card reveal" aria-labelledby="pwTitle">
+          <div class="card-head"><h3 id="pwTitle">Password generator</h3><span class="tag">Python</span></div>
+          <p class="desc">Strong, randomized passwords. Slide to choose how many letters, numbers, and symbols.</p>
+          <div class="ctl"><label for="pwL">Letters</label><input type="range" id="pwL" min="0" max="30" value="10"><output id="vL">10</output></div>
+          <div class="ctl"><label for="pwN">Numbers</label><input type="range" id="pwN" min="0" max="30" value="4"><output id="vN">4</output></div>
+          <div class="ctl"><label for="pwS">Symbols</label><input type="range" id="pwS" min="0" max="30" value="3"><output id="vS">3</output></div>
+          <output class="out" id="pwOut" aria-live="polite"></output>
+          <div class="meter"><i id="meterFill"></i></div>
+          <div class="meter-row"><span id="strength"></span><span></span></div>
+          <div class="btns">
+            <button class="pill" type="button" id="pwNew">Generate new</button>
+            <button class="pill gray" type="button" id="pwCopy">Copy</button>
+          </div>
+          <a class="more" href="https://github.com/t9m487cjd8-creator/Password_generator" target="_blank" rel="noopener">View code on GitHub &rsaquo;</a>
+        </article>
+
+        <article class="card reveal" style="--d:.12s" aria-labelledby="fTitle">
+          <div class="card-head"><h3 id="fTitle">Finding factorial</h3><span class="tag">Python</span></div>
+          <p class="desc">Pick a number and a loop multiplies its way down to the answer.</p>
+          <div class="stepper">
+            <button class="round" type="button" id="fMinus" aria-label="Decrease number">&minus;</button>
+            <input type="number" id="fN" min="0" max="1000" value="10" aria-label="Number from 0 to 1000">
+            <button class="round" type="button" id="fPlus" aria-label="Increase number">+</button>
+          </div>
+          <div class="chips" aria-label="Quick picks">
+            <button class="chip" type="button" data-n="5">5</button>
+            <button class="chip" type="button" data-n="20">20</button>
+            <button class="chip" type="button" data-n="50">50</button>
+            <button class="chip" type="button" data-n="100">100</button>
+          </div>
+          <output class="out scroll" id="fOut" aria-live="polite"></output>
+          <div class="meter-row"><span id="fDigits"></span><span></span></div>
+          <a class="more" href="https://github.com/t9m487cjd8-creator/Finding_Factorial" target="_blank" rel="noopener">View code on GitHub &rsaquo;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="about">
+    <div class="container">
+      <p class="statement" id="statement">I’m a Computer Science student who learns by building. Every project starts as a small idea, becomes a script, and ends up on GitHub. I’m always coding, and always picking up something new.</p>
+      <div class="about-meta reveal">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/318106262?v=4" alt="Surya’s GitHub profile photo" width="88" height="88" onerror="this.style.display='none'">
+        <ul class="kit" aria-label="Toolkit">
+          <li>Python</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Command line</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="big reveal">Let’s connect.</h2>
+      <p class="reveal">New side quests land on GitHub first.</p>
+      <div class="social reveal">
+        <a href="https://github.com/t9m487cjd8-creator" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/chalasani-surya-a32b663a8/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/surya_o_o/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Surya. Built by hand and shipped to GitHub.</footer>
+
+</body>
+</html>
